@@ -47,12 +47,14 @@ body {
     margin: 40px 0 30px;
     color: hsl(179, 62%, 43%);
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .join-subtitle {
     margin: 0 0 15px 0;
     color: hsl(71, 73%, 54%);
     font-weight: 700;
+    font-size: 1.17rem;
 }
 
 .para {
@@ -78,6 +80,7 @@ body {
 
 .monthly-title {
     margin: 25px 0;
+    font-size: 1.17rem;
 }
 
 .monthly-price {
@@ -122,6 +125,7 @@ span {
 
 .why-title {
     margin: 25px 0;
+    font-size: 1.17rem;
 }
 
 .lists {
