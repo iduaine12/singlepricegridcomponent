@@ -19,7 +19,6 @@ body {
 .container {
     width: 660px;
     height: 475px;
-    /*border: 1px solid black;*/
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -92,6 +91,7 @@ body {
 span {
     font-size: 1rem;
     margin: 0 10px;
+    opacity: 50%;
 }
 
 .monthly-para {
