@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 660px;
+    height: 475px;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "top top"
+    "bottom-left bottom-right";
+
+}
+
+.join {
+    background: #ffffff;
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+}
+
+.join-text {
+    width: 87%;
+}
+
+.join-title {
+    margin: 40px 0 30px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.join-subtitle {
+    margin: 0 0 15px 0;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.para {
+    line-height: 30px;
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    margin: 0 0 25px;
+}
+
+.monthly {
+    background: hsl(179, 62%, 43%);
+    grid-area: bottom-left;
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monthly-text {
+    width: 74%;
+}
+
+.monthly-title {
+    margin: 25px 0;
+}
+
+.monthly-price {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.monthly-para {
+    margin: 10px 0;
+}
+
+.btn-container {
+    margin: 25px 0;
+}
+
+.btn {
+    color: hsl(204, 43%, 93%);
+    text-decoration: none;
+    background: hsl(71, 73%, 54%);
+    padding: 13px 92px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.why {
+    background: hsla(179, 62%, 43%, 80%);
+    grid-area: bottom-right;
+    display: flex;
+    justify-content: center;
+    color: hsl(204, 43%, 93%);
+}
+
+.why-text {
+    width: 74%;
+}
+
+.why-title {
+    margin: 25px 0;
+}
+
+.lists {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 25px;
+}
+
+@media screen and (max-width: 693px){
+    .container {
+        width: 330px;
+        height: 770px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "top"
+        "middle"
+        "bottom";
+    }
+    .join {
+        grid-area: top;
+    }
+
+    .monthly {
+        background: hsl(179, 62%, 43%);
+        grid-area: middle;
+    }
+
+    .why {
+        grid-area: bottom;
+    }
+}
